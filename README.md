@@ -1,3 +1,3 @@
 # Premier-League-Simulation
 
-test
+Projet dans le cadre de l'ENSAE
