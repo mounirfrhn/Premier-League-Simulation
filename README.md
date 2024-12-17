@@ -1,7 +1,6 @@
 # Performance-forecaster
 
-## Projet de Python 2024-2025
-## Prédire la forme des meilleurs joueurs de football au monde
+## Projet de Python 2024-2025 - Prédire la forme des meilleurs joueurs de football au monde
 
 Idée : en récupérant un maximum de données sur une liste de cinq joueurs que nous avons établie, à savoir Kylian Mbappé, Mohammed Salah, Vinicius Jr., Erling Haaland et Jude Bellingham, nous cherchons à visualiser leurs performance, et établir une évolution possible (probable) de leurs performances.
 
