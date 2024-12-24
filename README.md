@@ -1,6 +1,6 @@
 # Performance-forecaster
 
-## Projet de Python 2024-2025 - Prédire la forme des meilleurs joueurs de football au monde
+## Projet de Python 2024-2025 - Prédire la forme des meilleurs joueurs de football d'Angleterre
 
 Idée : en récupérant un maximum de données sur une liste de dix joueurs que nous avons établie, à savoir les dix joueurs les mieux notés de ligue anglaise (Premier League), nous cherchons à visualiser leurs performance, et établir une évolution possible (probable) de leurs performances.
 
