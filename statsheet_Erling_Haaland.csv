@@ -1,0 +1,6 @@
+Match ID,Home Team,Away Team,Home Score,Away Score,Player Rating,Goals,Assists,Shots on Target,Shots off Target,Big Chances Created,Big Chances Missed,Key Passes,Touches,Duels Won,Duels Lost,xG,xA
+12436453,Aston Villa,Manchester City,2,1,6.6,0,0,0,1,0,0,0,18,2,2,0.1133,0.042773
+12436451,Manchester City,Manchester United,1,2,6.8,0,0,0,0,0,0,1,21,4,5,0.1404,0.0103634
+12436445,Crystal Palace,Manchester City,2,2,7.0,1,0,2,0,0,1,0,20,2,1,0.689,0.115559
+12436972,Manchester City,Nottingham Forest,3,0,7.4,0,1,1,1,1,0,3,32,6,3,0.1653,0.290925
+12436504,Liverpool,Manchester City,2,0,6.7,0,0,1,0,0,0,1,16,0,2,0.1878,0.00612775
