@@ -20,25 +20,6 @@ Ce projet vise à prédire les performances de certains joueurs de Premier Leagu
     ├── requirements.txt            # Liste des dépendances
     └── main.ipynb                  # Notebook final
 
-## Prérequis
-Avant de commencer, assurez-vous d'avoir les dépendances suivantes installées sur votre machine :
-
-- Python 3.7 ou supérieur
-- Bibliothèques Python nécessaires :
-  ```bash
-  pip install -r requirements.txt
-  ```
-
-Fichier `requirements.txt` :
-```
-requests
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-```
-
 ---
 
 ## Comment exécuter le projet
@@ -49,12 +30,22 @@ scikit-learn
    cd Premier-League-Simulation
    ```
 
-2. **Configurer l'API** :
-   - Obtenez une clé API de la plateforme de statistiques sportives.
-   - Ajoutez votre clé dans un fichier `.env` au format :
-     ```env
-     API_KEY=VotreCleAPI
-     ```
+2. **Créer un environnement virtuel** :
+   ```bash
+   python -m venv .venv
+   source venv/bin/activate
+   ```
+
+3. **Installer les dépendances** :
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Installer les dépendances** :
+   - sélectionner 'venv' au moment de choisir le Kernel du notebook main.ipynb
+
+NB : Si vous souhaitez scrapper vous-même les données, il est nécessaire de récuperer une clé API sur rapidAPI et de changer celle dans le fichier src/scripts/get_descriptive_data.py
+
 ---
 
 ## Scrapping
@@ -67,7 +58,6 @@ Dans le fichier `main.ipynb`, le scrapping est effectué principalement en utili
 2. **Extraction et validation** : Vérification des réponses de l'API pour s'assurer qu'elles contiennent les informations attendues, suivie d'un nettoyage des données.
    - Exemple : Retrait des doublons, correction des formats de date.
 3. **Stockage local** : Sauvegarde des données dans des fichiers CSV pour un accès rapide et une utilisation dans les étapes ultérieures du pipeline.
-   - Structure : Chaque fichier CSV correspond à un type spécifique de donnée (par exemple, statistiques des joueurs, données des équipes).
 
 Ces données constituent la base des analyses et des modèles présentés dans les sections suivantes.
 
@@ -91,25 +81,19 @@ Ces visualisations fournissent des insights précieux pour orienter la phase de 
 La phase de modélisation, détaillée dans `main.ipynb`, vise à prédire les performances futures des joueurs. Les étapes clés incluent :
 
 1. **Préparation des données** :
-   - Division en ensembles d'entraînement (70%) et de test (30%).
+   - Division en ensembles d'entraînement (80%) et de test (20%).
    - Normalisation des valeurs pour garantir une échelle homogène entre les différentes variables.
 
 2. **Entraînement des modèles** :
    - Modèles implémentés :
-     - Régression logistique pour des prédictions basées sur des relations linéaires.
+     - Régression linéaire pour des prédictions basées sur des relations linéaires.
      - Forêts aléatoires pour capturer des interactions complexes entre les variables.
-   - Hyperparamètres ajustés : Nombre d'estimators pour les forêts aléatoires, régularisation pour la régression logistique.
-
-3. **Évaluation des performances** :
-   - Métriques utilisées :
-     - Accuracy pour mesurer la proportion de prédictions correctes.
-     - Score F1 pour évaluer l'équilibre entre précision et rappel.
-     - Matrices de confusion pour analyser les erreurs.
+     - LSTM pour capturer les relations temporelles entre les matchs
 
 Les résultats montrent que les forêts aléatoires obtiennent une meilleure performance globale, en particulier sur des données riches en variables interactives.
 
 ---
 
 ## Objectifs futurs
-- Intégrer des données temps réel pour les mises à jour dynamiques des prédictions.
+- Améliorer la prédiction des modèles en utilisant les ranks des équipes qui se rencontrent
 - Développer une interface utilisateur intuitive pour permettre aux utilisateurs d'entrer des données et de visualiser les prédictions.
