@@ -7,18 +7,18 @@ Ce projet vise à prédire les performances de certains joueurs de Premier Leagu
 
 ## Structure du projet
 
-Premier-League-Simulation/
-│
-├── src/
-│   ├── data/
-│   │   ├── descriptive_data/   # Données générées et CSV des joueurs
-│   │   ├── model_data/         # Données pour entrainer les modèles
-│   ├── notebooks/              # Notebooks Jupyter pour analyse et visualisation
-│   ├── scripts/                # Scripts Python pour automatiser des tâches (scrapping)
-│
-├── README.md                   # Documentation du projet
-├── requirements.txt            # Liste des dépendances
-└── main.ipynb                  # Notebook final
+    Premier-League-Simulation/
+    │
+    ├── src/
+    │   ├── data/
+    │   │   ├── descriptive_data/   # Données générées et CSV des joueurs
+    │   │   ├── model_data/         # Données pour entrainer les modèles
+    │   ├── notebooks/              # Notebooks Jupyter pour analyse et visualisation
+    │   ├── scripts/                # Scripts Python pour automatiser des tâches (scrapping)
+    │
+    ├── README.md                   # Documentation du projet
+    ├── requirements.txt            # Liste des dépendances
+    └── main.ipynb                  # Notebook final
 
 ## Prérequis
 Avant de commencer, assurez-vous d'avoir les dépendances suivantes installées sur votre machine :
