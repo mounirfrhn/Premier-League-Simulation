@@ -33,7 +33,7 @@ Ce projet vise à prédire les performances de certains joueurs de Premier Leagu
 2. **Créer un environnement virtuel** :
    ```bash
    python -m venv .venv
-   source venv/bin/activate
+   source .venv/bin/activate
    ```
 
 3. **Installer les dépendances** :
