@@ -27,3 +27,29 @@ Premier-League-Simulation/
 ├── README.md                   # Documentation du projet
 ├── requirements.txt            # Liste des dépendances
 └── ...
+
+
+---
+
+## 🏗️ Installation
+Suivez ces étapes pour configurer l'environnement et exécuter le projet :
+
+### 1. Cloner le dépôt
+Cloner le projet localement :
+git clone https://github.com/mounirfrhn/Premier-League-Simulation.git
+cd Premier-League-Simulation
+
+### 2. Créer un environnement virtuel
+Créez un environnement virtuel pour isoler les dépendances :
+python -m venv env
+
+### 3. Activer l'environnement virtuel
+Activez l'environnement virtuel :
+Linux/Mac :
+source env/bin/activate
+Windows :
+env\Scripts\activate
+
+### 4. Installer les dépendances
+Installez toutes les bibliothèques nécessaires à partir du fichier requirements.txt :
+pip install -r requirements.txt
