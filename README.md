@@ -16,4 +16,14 @@ Moyens : pour récolter les données, utiliser un API (Sofascore) et en scrappan
 
 Voici la structure des dossiers :
 
-Premier-League-Simulation/ │ ├── src/ │ ├── data/ │ │ ├── descriptive_data/ # Données générées et CSV des joueurs │ ├── notebooks/ # Notebooks Jupyter pour analyse et visualisation │ ├── scripts/ # Scripts Python pour automatiser des tâches │ ├── README.md # Documentation du projet ├── requirements.txt # Liste des dépendances └── ...
+Premier-League-Simulation/
+│
+├── src/
+│   ├── data/
+│   │   ├── descriptive_data/   # Données générées et CSV des joueurs
+│   ├── notebooks/              # Notebooks Jupyter pour analyse et visualisation
+│   ├── scripts/                # Scripts Python pour automatiser des tâches
+│
+├── README.md                   # Documentation du projet
+├── requirements.txt            # Liste des dépendances
+└── ...
